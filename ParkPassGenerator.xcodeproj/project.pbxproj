@@ -14,6 +14,10 @@
 		BDA60F4D1EECCC95003BB968 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = BDA60F4B1EECCC95003BB968 /* LaunchScreen.storyboard */; };
 		BDA60F581EECCC95003BB968 /* ParkPassGeneratorTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = BDA60F571EECCC95003BB968 /* ParkPassGeneratorTests.swift */; };
 		BDA60F631EECCC96003BB968 /* ParkPassGeneratorUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = BDA60F621EECCC96003BB968 /* ParkPassGeneratorUITests.swift */; };
+		BDA60F711EECCE43003BB968 /* Person.swift in Sources */ = {isa = PBXBuildFile; fileRef = BDA60F701EECCE43003BB968 /* Person.swift */; };
+		BDA60F731EECD20D003BB968 /* Guest.swift in Sources */ = {isa = PBXBuildFile; fileRef = BDA60F721EECD20D003BB968 /* Guest.swift */; };
+		BDA60F751EED092A003BB968 /* EntrantTypes.swift in Sources */ = {isa = PBXBuildFile; fileRef = BDA60F741EED092A003BB968 /* EntrantTypes.swift */; };
+		BDA60F771EED0959003BB968 /* errors.swift in Sources */ = {isa = PBXBuildFile; fileRef = BDA60F761EED0959003BB968 /* errors.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -47,6 +51,10 @@
 		BDA60F5E1EECCC95003BB968 /* ParkPassGeneratorUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = ParkPassGeneratorUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		BDA60F621EECCC96003BB968 /* ParkPassGeneratorUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ParkPassGeneratorUITests.swift; sourceTree = "<group>"; };
 		BDA60F641EECCC96003BB968 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		BDA60F701EECCE43003BB968 /* Person.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Person.swift; sourceTree = "<group>"; };
+		BDA60F721EECD20D003BB968 /* Guest.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Guest.swift; sourceTree = "<group>"; };
+		BDA60F741EED092A003BB968 /* EntrantTypes.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = EntrantTypes.swift; sourceTree = "<group>"; };
+		BDA60F761EED0959003BB968 /* errors.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = errors.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -98,6 +106,10 @@
 			isa = PBXGroup;
 			children = (
 				BDA60F421EECCC95003BB968 /* AppDelegate.swift */,
+				BDA60F701EECCE43003BB968 /* Person.swift */,
+				BDA60F761EED0959003BB968 /* errors.swift */,
+				BDA60F741EED092A003BB968 /* EntrantTypes.swift */,
+				BDA60F721EECD20D003BB968 /* Guest.swift */,
 				BDA60F441EECCC95003BB968 /* ViewController.swift */,
 				BDA60F461EECCC95003BB968 /* Main.storyboard */,
 				BDA60F491EECCC95003BB968 /* Assets.xcassets */,
@@ -262,7 +274,11 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				BDA60F711EECCE43003BB968 /* Person.swift in Sources */,
+				BDA60F751EED092A003BB968 /* EntrantTypes.swift in Sources */,
+				BDA60F771EED0959003BB968 /* errors.swift in Sources */,
 				BDA60F451EECCC95003BB968 /* ViewController.swift in Sources */,
+				BDA60F731EECD20D003BB968 /* Guest.swift in Sources */,
 				BDA60F431EECCC95003BB968 /* AppDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
