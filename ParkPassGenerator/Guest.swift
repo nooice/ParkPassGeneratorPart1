@@ -34,7 +34,7 @@ class Guest: Entrant {
 }
 
 //employee class set up
-class HourlyEmployee: Entrant {
+class Employee: Entrant {
     var position: EmployeePosition
     var person: Person
     var canAccessRides: Bool
@@ -78,24 +78,21 @@ class HourlyEmployee: Entrant {
     }
 }
 
-class Manager: HourlyEmployee {
+class Manager: Employee {
     var managementTier: ManagerTier
     
-    override init(fromProfileOf person: Person, withPostion position: EmployeePosition, withManagerPostion managementTier: ManagerTier) throws {
+    init(fromProfileOf person: Person, withManagerPostion managementTier: ManagerTier) throws {
+        let position = EmployeePosition.manager
         self.managementTier = managementTier
         try super.init(fromProfileOf: person, withPostion: position)
     }
     
-    //used to automatically assign instance of Manager() to position of .manager
-    convenience init(){
-        position = .manager
-    }
 }
 
 //i was using the code below to test if the functions were working.
 
-//let kalvin = Person(firstName: "Kalvin", lastName: "Bunn", street: nil, city: nil, state: nil, zip: nil, dateOfBirth: "12/26/1990", ssNumber: nil)
+//let kalvin = Person(firstName: "Kalvin", lastName: "Bunn", street: "22499 Hoskins Rd", city: "Caldwell", state: "ID", zip: "83607", dateOfBirth: "12/26/1990", ssNumber: "123-45-6789")
 //
-//let newPass = try Guest(ofType: .childGuest, From: kalvin)
+//let newPass = try HourlyEmployee(fromProfileOf: kalvin, withPostion: .foodServices)
 //
-//newPass.areaAccess
+//newPass.position.foodDiscount
